@@ -1,0 +1,49 @@
+@import "../../../colors.scss";
+
+.navbar {
+    min-height: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.navbar-toggler {
+    border: 0;
+    font-weight: 800;
+    background-color: transparent;
+}
+
+.nav-link img {
+   height: 17px;
+}
+
+.nav-item a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 85%;
+    text-transform: uppercase;
+    color: $dark_grey;
+}
+
+.vl {
+    background: $light_grey;
+    height: 20px;
+    width: 1px;
+}
+
+@media (max-width: 767.98px) { 
+    .vl {
+        display: none;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .navbar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .navbar-right>li {
+        display: inline-block !important;
+        padding-right: 0;
+    }
+}

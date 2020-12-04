@@ -1,0 +1,57 @@
+@import "../../../../colors.scss";
+
+/***************
+    CAROUSEL
+***************/
+
+#carousel{
+    min-height: calc(100vh - 60px); // Subtract navbar height from 100vh
+    width:100%;
+}
+
+.carousel-first-background p {
+  padding-left: 4rem;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-first-background {
+    background-color: $red;
+    color: #FFFFFF;
+    display: flex;          
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;  
+    height: calc(100vh - 60px);
+}
+
+.carousel-first-image {
+  background-image: url("/assets/img/slider_1.jpg");
+  background-color: #cccccc;
+  min-height: calc(100vh - 60px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+
+.carousel-first-background h1 {
+  font-size: 650%;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  display: block;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-text {
+    font-size: 80px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: calc(100vh - 60px);
+}

@@ -1,0 +1,85 @@
+@import "../../../../colors.scss";
+
+.pixel-perfect-bg {
+    background-color: $black;
+    min-height: 100vh;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.description-text {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 15px;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+p {
+    color: $grey;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: $light_grey;
+    font-size: 50;
+    line-height: 30px;
+    margin: 0;
+}
+
+button {
+    border-radius: 3px;
+    border: 2px solid $light_grey;
+    background-color: transparent;
+    color: $light_grey;
+    padding: 6px 18px;
+    font-size: 11px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img-card {
+    width: 250px; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+
+.box {
+    color: $light_grey;
+    background-color: $red;
+    max-width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 25px 50px;
+    font-family: 'Roboto', sans-serif;
+    p {
+        color: $light_grey;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        line-height: 170%;
+        padding-right: 0;
+    }
+
+    h3 {
+        line-height: 150%;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .pixel-perfect-bg {
+        padding: 30px;
+        margin-top: 25px;
+    }
+
+    .container-fluid { padding-top: 25px; }
+
+    .col-md-7{
+        padding-top: 25px;
+    }
+}

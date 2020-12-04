@@ -1,0 +1,63 @@
+@import "../../../../colors.scss";
+
+/***************
+    FEATURES
+***************/
+p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+    margin: 0;
+    color: $red;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    height: 35px;
+}
+
+.col-12 h1 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.features {
+    min-height: 50vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.features-long{
+    text-align: center;
+}
+
+.box{
+    font-size: 90%;
+    line-height: 145%;
+    margin-bottom: 2%;
+}
+
+.vl {
+    background: $red;
+    height: 30px;
+    width: 1px;
+}
+
+@media (max-width: 575.98px) { 
+    .box {
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+}

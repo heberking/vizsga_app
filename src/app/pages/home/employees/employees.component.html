@@ -1,0 +1,30 @@
+<section id="employees">
+    <div class="container-fluid employee-bg">
+        <div class="row ml-5 mr-5 d-flex align-items-center justify-content-center">
+            <div class="col-12 text-center">
+                <p class="pb-1">Csapatmunka építi a bizalmat</p>
+                <h1>Kreatív munkatársak</h1>
+            </div>
+            <div *ngFor="let item of employees" class="col-md-3 col-sm-6 col-xs-12 mt-4 d-flex justify-content-center flex-column mt-5">
+                <div class="employee-img">
+                    <img [src]="item.img_url" class="img-fluid d-flex" alt="employee">
+                    <div class="overlay">
+                        <div class="row m-0 h-100 d-flex justify-content-end">
+                            <div class="col-12 pb-4 d-flex flex-column align-items-center justify-content-end">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est reprehenderit provident reiciendis.</p>
+                                <hr class="separator">
+                                <div class="social w-100">
+                                    <img class="pl-3 pr-3" src="assets/icons/facebook_white.png" alt="facebook">
+                                    <img class="pl-3 pr-3" src="assets/icons/twitter_white.png" alt="twitter">
+                                    <img class="pl-3 pr-3" src="assets/icons/dribbble_white.png" alt="dribbble">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="employee-name m-0">{{item.name}}</p>
+                <p class="employee-job">{{item.job}}</p>
+            </div>
+        </div>
+    </div>
+</section>

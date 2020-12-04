@@ -1,0 +1,69 @@
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 social">
+                <div class="row h-100 justify-content-around align-items-center">
+                    <div class="col-md-4 col-sm-12 d-flex align-items-center justify-content-center flex-wrap">
+                        <span>Pécsen található kreatív stúdió</span>
+                    </div>
+                    <div class="col-md-4 col-sm-12 text-center">
+                        <img src="assets/img/logo_white.png" width="150" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-12 d-flex align-items-center justify-content-center flex-wrap">
+                       <span>A közösségi hálózatokon</span>
+                       <img class="ml-3" src="assets/icons/facebook_white.png" alt="img-facebook">
+                       <img class="ml-4" src="assets/icons/twitter_white.png" alt="img-twitter">
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="row description">
+            <div class="col-md-4 d-flex col-sm-12 description-col">
+                <h2>RÓLUNK</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at fugiat consectetur minima labore saepe. Quo libero sed molestias consectetur ea voluptate qui expedita totam ab, aut dolorem distinctio et repellat fuga aspernatur ipsa cupiditate nobis facilis aliquid voluptas magnam, sapiente minima asperiores dicta. Laborum?</p>
+            </div>
+            <div class="col-md-4 col-sm-12 description-col pb-3">
+                <h2>KORÁBBI CIKKEK</h2>
+                <div class="row">
+                    <div class="col-12 d-flex direction-row justify-content-center">
+                        <img src="assets/img/blog_1.jpg" class="img-fluid" alt="blog">
+                        <p class="ml-3">Amit a célok elérésével kapsz, nem olyan fontos, 
+                            mint amivé a célok elérésével válsz.</p>
+                    </div>
+                    <div class="col-12">
+                        <hr class="line">
+                    </div>
+                    <div class="col-12 d-flex direction-row pt-2">
+                        <img src="assets/img/blog_2.jpg" class="img-fluid" alt="blog">
+                        <p class="ml-3">A tervezés elsődleges feltétele a szükséglet felismerése.</p>
+                    </div> 
+                    <div class="col-12">
+                        <hr class="line">
+                    </div>
+                    <div class="col-12 d-flex direction-row pt-2">
+                        <img src="assets/img/blog_3.jpg" class="img-fluid" alt="blog">
+                        <p class="ml-3">A stílusok jönnek és mennek. A dizájn nyelv, nem stílus.</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 description-col">
+                <h2>PORTFÓLIÓ</h2>
+                <div class="row">
+                    <div *ngFor="let item of portfolio" class="w-50 col-3 justify-content-start">
+                        <img [src]="item.img_url" class="img-fluid portfolio" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 footer-bottom-text pt-4">
+                <hr class="line">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <h2>Front End Developer Teszt feladat</h2>
+                        <h2>Webstar Csoport Kft.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+

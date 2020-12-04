@@ -1,0 +1,81 @@
+@import "../../../../colors.scss";
+
+/***************
+    EMPLOYEES
+***************/
+
+p { 
+    text-transform: uppercase; 
+    font-size: 14px;
+    color: $grey;
+    margin: 0;
+} 
+
+h1 { 
+    text-transform: uppercase; 
+    font-weight: 700; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.employee-bg {
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.employee-name {
+    text-align: center;
+    padding-top: 1rem;
+    margin-bottom: 3px;
+    font-weight: 700;
+    color: $black;
+}
+
+.employee-job {
+    text-align: center;
+    color: $grey;
+}
+
+.employee-img {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.employee-img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(0, 0, 0, .6);
+    p { 
+        font-size: 12px;
+        color: $light_grey;
+        text-transform: none;
+        line-height: 20px;
+    }
+}
+
+.employee-img:hover .overlay {
+    display: block;
+}
+
+.separator {
+    background-color: $red;
+    width: 85%;
+    max-height: 1px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 575.98px) { 
+    .employee-bg {
+        padding-top: 25px;
+    }
+}
+  
